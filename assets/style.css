@@ -1,0 +1,119 @@
+body {
+    background-color: #ddd;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.corpo {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    background-color: #e9e9e9;
+    box-shadow: 3px 0 6px -4px rgba(0, 0, 0, .3);
+    padding: 5px;
+}
+
+.cabecalho {
+    display: block;
+}
+
+#perfil {
+    border-radius: 50%;
+    display: flex;
+    margin: 2% auto;
+    width: 15%;
+}
+
+#sobre_mim {
+    width: 66%;
+    margin: auto;
+    text-align: center;
+}
+
+#sobre_mim h1 {
+    color: #2d2d2d;
+    text-transform: uppercase;
+}
+
+#sobre_mim p {
+    color: #4d4d4d;
+    font-weight: bold;
+}
+
+.conhecimento {
+    width: 33%;
+    display: inline-flex;
+    justify-content: space-around;
+    margin: 50px 0 10px 0;
+}
+
+.area_conhecimento{
+    margin-left: 10px;
+    margin-right: -10px;
+    position: relative;
+    width: 30%;
+    height: 0;
+    padding-bottom: 30%;
+    border: 2px solid;
+    border-radius: 100%;
+    align-items: center;
+}
+
+#design .area_conhecimento h1 {
+    position: absolute;
+    margin: 10px 0 0 -7px;
+    text-align: center;
+    display: flex;
+    padding: 30px;
+    font-size: 15pt;
+    color: #6a219e;
+}
+
+#design .area_conhecimento {
+    border-color: #6a219e;
+}
+
+#front .area_conhecimento h1 {
+    position: absolute;
+    margin: -2px 0 0 -3px;
+    text-align: center;
+    display: flex;
+    padding: 30px;
+    font-size: 15pt;
+    color: #3a9e64;
+}
+
+#front .area_conhecimento h1 {
+    position: absolute;
+    margin: -2px 0 0 -3px;
+    text-align: center;
+    display: flex;
+    padding: 30px;
+    font-size: 15pt;
+    color: #38d1ce;
+}
+
+#front .area_conhecimento {
+    border-color: #38d1ce;
+}
+
+#back .area_conhecimento h1 {
+    position: absolute;
+    margin: -2px 0 0 -3px;
+    text-align: center;
+    display: flex;
+    padding: 30px;
+    font-size: 15pt;
+    color: #349E61;
+}
+
+#back .area_conhecimento {
+    border-color: #349E61;
+}
+
+.conhecimento p {
+    font-size: 10pt;
+    width: 60%;
+    text-align: left;
+    font-weight: bold;
+    color: #3d3d3d;
+}
