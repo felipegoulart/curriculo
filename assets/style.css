@@ -21,6 +21,7 @@ body {
     display: flex;
     margin: 2% auto;
     width: 15%;
+    border: 10px solid #eee;
 }
 
 #sobre_mim {
@@ -39,11 +40,17 @@ body {
     font-weight: bold;
 }
 
+/* Conhecimentos */
+
+.meu_conhecimento {
+    padding: 0 50px;
+    margin: 50px 0 10px 0;
+}
+
 .conhecimento {
     width: 33%;
     display: inline-flex;
     justify-content: space-around;
-    margin: 50px 0 10px 0;
 }
 
 .area_conhecimento{
@@ -60,7 +67,7 @@ body {
 
 #design .area_conhecimento h1 {
     position: absolute;
-    margin: 10px 0 0 -7px;
+    margin: 5px 0 0 -10px;
     text-align: center;
     display: flex;
     padding: 30px;
@@ -74,17 +81,7 @@ body {
 
 #front .area_conhecimento h1 {
     position: absolute;
-    margin: -2px 0 0 -3px;
-    text-align: center;
-    display: flex;
-    padding: 30px;
-    font-size: 15pt;
-    color: #3a9e64;
-}
-
-#front .area_conhecimento h1 {
-    position: absolute;
-    margin: -2px 0 0 -3px;
+    margin: -8px 0 0 -5px;
     text-align: center;
     display: flex;
     padding: 30px;
@@ -98,7 +95,7 @@ body {
 
 #back .area_conhecimento h1 {
     position: absolute;
-    margin: -2px 0 0 -3px;
+    margin: -8px 0 0 -3px;
     text-align: center;
     display: flex;
     padding: 30px;
@@ -112,8 +109,93 @@ body {
 
 .conhecimento p {
     font-size: 10pt;
+    margin-top: 8px;
     width: 60%;
     text-align: left;
     font-weight: bold;
     color: #3d3d3d;
+}
+
+.minha_formacao {
+    display: block;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.minha_formacao h1 {
+    text-transform: uppercase;
+    color: #2d2d2d;
+}
+
+.formacao {
+    display: inline-block;
+    position: relative;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 15px;
+    justify-content: space-around;
+    background-color: #fff;
+    box-shadow: 3px 3px 6px -4px rgba(0, 0, 0, .3);
+}
+
+.formacao h2 {
+    margin-right: 3px;
+    padding-right: 7px;
+    text-transform: uppercase;
+    display: inline;
+    color: #3d3d3d;
+    font-size: 15pt;
+}
+
+.cabecalho_formacao {
+    background-color: #f2f2f2;
+    padding: 5px;
+    padding-right: 2px;
+    border-radius: 10px;
+}
+
+.instituicao {
+    border-right: 2px solid #3d3d3d;
+}
+
+.minha_exp {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.minha_exp h1 {
+    text-transform: uppercase;
+    color: #2d2d2d;
+}
+
+.cabecalho_exp {
+    background-color: #f2f2f2;
+    padding: 5px;
+    padding-right: 2px;
+    border-radius: 10px;
+}
+
+.experiencia {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 15px;
+    justify-content: space-around;
+    background-color: #fff;
+    box-shadow: 3px 3px 6px -4px rgba(0, 0, 0, .3);
+}
+
+.experiencia h2 {
+    margin-right: 3px;
+    padding-right: 7px;
+    text-transform: uppercase;
+    display: inline;
+    color: #3d3d3d;
+    font-size: 15pt;
+}
+
+
+.local {
+    border-right: 2px solid #3d3d3d;
 }
