@@ -1,0 +1,22 @@
+#arrow_back {
+    display: block;
+    position: fixed;
+    float: left;
+    width: 3%;
+}
+
+div {
+    display: block;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.imagens {
+    display: inline-flex;
+    margin: 0 2%;
+    margin-bottom: 15px;
+    min-width: 35%;
+    width: 450px;
+    border-radius: 15px;
+}
+

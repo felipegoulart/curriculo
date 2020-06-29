@@ -3,10 +3,23 @@ body {
     font-family: 'PT Sans', sans-serif;
 }
 
+h1 {
+    text-transform: uppercase;
+    color: #2d2d2d;
+    text-align: center;
+}
+
+p {
+    color: #4d4d4d;
+    font-weight: bold;
+    text-align: center;
+}
+
 .corpo {
     width: 80%;
     display: block;
     margin: 0 auto;
+    border-radius: 15px;
     background-color: #e9e9e9;
     box-shadow: 3px 0 6px -4px rgba(0, 0, 0, .3);
     padding: 5px;
@@ -21,7 +34,6 @@ body {
     display: flex;
     margin: 2% auto;
     width: 15%;
-    border: 10px solid #eee;
 }
 
 #sobre_mim {
@@ -30,48 +42,42 @@ body {
     text-align: center;
 }
 
-#sobre_mim h1 {
-    color: #2d2d2d;
-    text-transform: uppercase;
-}
-
-#sobre_mim p {
-    color: #4d4d4d;
-    font-weight: bold;
-}
 
 /* Conhecimentos */
 
 .meu_conhecimento {
     padding: 0 50px;
     margin: 50px 0 10px 0;
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
 }
 
 .conhecimento {
-    width: 33%;
+    min-width: 300px;
+    max-width: 33%;
     display: inline-flex;
-    justify-content: space-around;
 }
+
 
 .area_conhecimento{
-    margin-left: 10px;
-    margin-right: -10px;
-    position: relative;
-    width: 30%;
+    display: flex;
+    width: 100px;
     height: 0;
-    padding-bottom: 30%;
+    padding-bottom: 100px;
     border: 2px solid;
     border-radius: 100%;
-    align-items: center;
 }
 
-#design .area_conhecimento h1 {
-    position: absolute;
-    margin: 5px 0 0 -10px;
+.area_conhecimento h3 {
     text-align: center;
     display: flex;
-    padding: 30px;
-    font-size: 15pt;
+    padding: 30%;
+    font-size: 120%;
+}
+
+#design .area_conhecimento h3{
+    margin: 5% 0 0 -10%;
     color: #6a219e;
 }
 
@@ -79,13 +85,8 @@ body {
     border-color: #6a219e;
 }
 
-#front .area_conhecimento h1 {
-    position: absolute;
-    margin: -8px 0 0 -5px;
-    text-align: center;
-    display: flex;
-    padding: 30px;
-    font-size: 15pt;
+#front .area_conhecimento h3 {
+    margin: -4% 0 0 -2%;
     color: #38d1ce;
 }
 
@@ -93,13 +94,9 @@ body {
     border-color: #38d1ce;
 }
 
-#back .area_conhecimento h1 {
-    position: absolute;
-    margin: -8px 0 0 -3px;
-    text-align: center;
-    display: flex;
-    padding: 30px;
-    font-size: 15pt;
+#back .area_conhecimento h3 {
+    margin: auto;
+    margin-top: -4%;
     color: #349E61;
 }
 
@@ -108,26 +105,25 @@ body {
 }
 
 .conhecimento p {
+    display: inline-flex;
     font-size: 10pt;
     margin-top: 8px;
+    margin-left: 5px;
     width: 60%;
     text-align: left;
     font-weight: bold;
     color: #3d3d3d;
 }
 
-.minha_formacao {
+.cards {
     display: block;
     margin-top: 15px;
     text-align: center;
+    padding: 0 15px;
 }
 
-.minha_formacao h1 {
-    text-transform: uppercase;
-    color: #2d2d2d;
-}
 
-.formacao {
+.card {
     display: inline-block;
     position: relative;
     padding: 10px;
@@ -138,64 +134,81 @@ body {
     box-shadow: 3px 3px 6px -4px rgba(0, 0, 0, .3);
 }
 
-.formacao h2 {
+.card h2 {
     margin-right: 3px;
     padding-right: 7px;
     text-transform: uppercase;
     display: inline;
     color: #3d3d3d;
-    font-size: 15pt;
+    font-size: 13pt;
 }
 
-.cabecalho_formacao {
+.card p {
+    font-weight: bold;
+    color: #4d4d4d;
+}
+
+.cabecalho_card {
     background-color: #f2f2f2;
     padding: 5px;
     padding-right: 2px;
     border-radius: 10px;
 }
-
-.instituicao {
-    border-right: 2px solid #3d3d3d;
-}
-
-.minha_exp {
-    margin-top: 15px;
-    text-align: center;
-}
-
-.minha_exp h1 {
-    text-transform: uppercase;
-    color: #2d2d2d;
-}
-
-.cabecalho_exp {
-    background-color: #f2f2f2;
-    padding: 5px;
-    padding-right: 2px;
-    border-radius: 10px;
-}
-
-.experiencia {
-    position: relative;
-    display: inline-block;
-    padding: 10px;
-    margin: 5px;
-    border-radius: 15px;
-    justify-content: space-around;
-    background-color: #fff;
-    box-shadow: 3px 3px 6px -4px rgba(0, 0, 0, .3);
-}
-
-.experiencia h2 {
-    margin-right: 3px;
-    padding-right: 7px;
-    text-transform: uppercase;
-    display: inline;
-    color: #3d3d3d;
-    font-size: 15pt;
-}
-
 
 .local {
     border-right: 2px solid #3d3d3d;
+}
+
+.portifolio {
+    display: block;
+    margin-top: 15px;
+    text-align: center;
+    padding: 0 15px;
+}
+
+.portifolio h1 {
+    text-transform: uppercase;
+    color: #2d2d2d;
+}
+
+.imagem {
+    display: inline-block;
+    margin-bottom: 15px;
+    max-width: 50%;
+    width: 400px;
+    border-radius: 15px;
+    animation: 5s ease;
+}
+
+.imagem:hover {
+    width: 50%;
+}
+
+.contatos {
+    display: flex;
+    margin: 0 auto 15px auto;
+    text-decoration: none;
+    font-weight: bold;
+    color: #4d4d4d;
+    justify-content: space-around;
+    
+}
+
+.contato {
+    display: table;
+}
+
+.contato a{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.contato a{
+    text-decoration: none;
+    color: #4d4d4d;
+}
+
+.imagens {
+    width: 40px;
+    margin-right: 15px;
 }
